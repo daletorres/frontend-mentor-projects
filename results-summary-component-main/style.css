@@ -160,3 +160,62 @@ button:hover {
     linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+@media screen and (max-width:759px)  {
+    main {
+        display: block;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+       
+    }
+
+    .results {
+        height: 60vh;
+        width: 100vw;
+        padding-bottom: 0px;
+    }
+    .result-text {
+        margin-bottom: -25px;
+    }
+    .summary {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .results > .title {
+        margin-top: -30px;
+        margin-bottom: 15px;
+    }
+    .result-rank {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:375px)  {
+    main {
+        display: block;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+       
+    }
+
+    .results {
+        height: 60vh;
+        width: 100vw;
+        padding-bottom: 0px;
+    }
+    .result-text {
+        margin-bottom: -25px;
+    }
+    .summary {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .results > .title {
+        margin-top: -30px;
+        margin-bottom: 15px;
+    }
+    .result-rank {
+        margin-bottom: 5px;
+    }
+}
