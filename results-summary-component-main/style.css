@@ -36,7 +36,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 375px;
+    width: 375px;
+    max-width: none;
     background-image: 
     linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 25px;
@@ -193,8 +194,6 @@ button:hover {
 @media screen and (max-width:375px)  {
     main {
         display: block;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
        
     }
 
