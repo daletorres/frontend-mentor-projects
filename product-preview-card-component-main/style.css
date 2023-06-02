@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Montserrat";
+    font-display: swap;
+    src: url(https://fonts.google.com/specimen/Montserrat);
+    font-weight: 500,700;
+
+}
+@font-face {
+    font-family: "Fraunces";
+    font-display: swap;
+    src: url(https://fonts.google.com/specimen/Fraunces);
+    font-weight: 700;
+
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    min-width: 100vw;
+    
+}
+.catalog {
+    margin: auto 0;
+    display: flex;
+    width: 750px;
+    height: 562.5px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+ 
+    justify-content: space-around;
+    padding: 2.5em;
+}
+
+/* Font styles */
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    margin-top: -1.5em;
+    color: hsl(228, 12%, 48%);
+}
+.pricetag {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+header, .pricetag > span {
+    font-family: "Fraunces", sans-serif;
+    font-size: 38px;
+}   
+section > p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-right: 2.5em;
+    color: hsl(228, 12%, 48%);
+}
+.pricetag > span {
+    color: hsl(158, 36%, 37%);
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    border: none;
+    padding: 1em;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+button:hover {
+    background-color: hsl(158, 38%, 13%);
+    cursor: pointer;
+}
+
+@media  screen and (max-width: 750px) {
+    .catalog {
+        flex-direction: column;
+    }
+    .catalog >img {
+        height: 25vh;
+        object-fit: cover;
+
+    }
+    
+    .catalog {
+        margin: 1em;
+        height: auto;
+    }   
+}
+
+@media  screen and (max-width: 375px) {
+    .catalog {
+        flex-direction: column;
+    }
+    .catalog >img {
+        height: 25vh;
+        object-fit: cover;
+
+    }
+    ::selection {
+        height: 50vh;
+    }
+    .catalog {
+        margin: 1em;
+        height: auto;
+    }
+    
+}
+
+
+.attribution {
+    margin-top: auto;
+    justify-self: center;
+}
