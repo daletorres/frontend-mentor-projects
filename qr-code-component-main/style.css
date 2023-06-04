@@ -41,6 +41,7 @@
     padding: 1rem;
     margin: 1rem;
     width: 300px;
+    box-shadow: .5px .5px .5px .5px grey;
 
 }
 article > h1 {
