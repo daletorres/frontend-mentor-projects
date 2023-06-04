@@ -54,7 +54,6 @@ body {
     width: 282px;
 }
 .svg-container  {
-    background-color: var(--Cyan);
     position: absolute;
     top: 0;
     left: 0;
@@ -63,9 +62,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: .50;
     visibility: hidden;
     border-radius: .5rem;
+}
+.svg-bg  {
+    background-color: var(--Cyan);
+    position: absolute;
+    height: 282px;
+    width: 282px;
+    opacity: .50;
+    border-radius: .5rem;
+    z-index: 1;
+}
+.svg-container > svg {
+    z-index: 2;
 }
 .image-container:hover .svg-container {
     visibility: visible;
