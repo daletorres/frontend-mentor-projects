@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Outfit";
+    font-display: swap;
+    src: url(https://fonts.google.com/specimen/Outfit);
+}
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+   
+    --Very-dark-blue-background: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-background: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+}
+* {
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+}
+a:link {
+    color: white;
+}
+a:hover{
+    color: var(--Cyan);
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: var(--Very-dark-blue-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.nft-card {
+    background-color: var(--Very-dark-blue-card-background);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 330px;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem black ;
+    color: var(--Soft-blue);
+}
+.image-container {
+    border-radius: .5rem;
+    height: 282px;
+    width: 282px;
+    position: relative;
+}
+.image-container > img {
+    border-radius: .5rem;
+    height: 282px;
+    width: 282px;
+}
+.svg-container  {
+    background-color: var(--Cyan);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 282px;
+    width: 282px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .50;
+    visibility: hidden;
+    border-radius: .5rem;
+}
+.image-container:hover .svg-container {
+    visibility: visible;
+    cursor: pointer;
+}
+.card-content > p{
+    font-size: 18px;
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+.card-info {
+    display: flex;
+    justify-content: space-between;
+}
+.left-info{
+    display: flex;
+    gap: .5rem;
+    color: var(--Cyan); 
+}
+.right-info {
+    display: flex;
+    gap: .5rem;
+    color: var(--Soft-blue);
+}
+hr{
+    margin-top: 1rem;
+    color: var(--Very-dark-blue-line);
+}
+.card-footer{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .25rem;
+}
+.card-footer > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
