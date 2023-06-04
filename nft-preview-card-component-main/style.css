@@ -39,7 +39,7 @@ body {
     padding: 1.5rem;
     width: 330px;
     border-radius: 1rem;
-    box-shadow: 0rem 0rem 1rem black ;
+    box-shadow: 0rem 0rem 1.5rem rgb(0, 0, 0, .22) ;
     color: var(--Soft-blue);
 }
 .image-container {
