@@ -15,14 +15,25 @@
     font-family: "Outfit", sans-serif;
     box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 a:link {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited{
     color: white;
 }
 a:hover{
     color: var(--Cyan);
-}
-a {
-    text-decoration: none;
 }
 body {
     background-color: var(--Very-dark-blue-background);
