@@ -1,0 +1,118 @@
+:root {
+    --pale-blue: rgb(224, 232, 255);
+    --bright-blue: rgb(56, 41, 224);
+    --hover-blue: rgba(56, 41, 224, .7);
+
+    --very-pale-blue: rgb(245, 247, 255);
+    --desaturated-blue: rgb(114, 128, 167);
+    --dark-blue: rgb(31, 47, 86);
+}
+@font-face {
+    font-family: "Red Hat Display", sans-serif;
+    src: url(https://fonts.google.com/specimen/Red+Hat+Display);
+    font-display: swap;
+    font-weight: 500,700,900;
+}
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "Red Hat Display", sans-serif;
+}
+body {
+   
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container > img {
+    width: 350px;
+}
+.summary-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    width: 350px;
+    overflow: hidden;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+.info-container > h1 {
+    font-weight: 900;
+    font-size: 25px;
+}
+.info-container > p {
+    font-size: 16px;
+    color: var(--desaturated-blue);
+}
+.order-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.change {
+    margin-left: auto;
+}
+.order-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    color: var(--desaturated-blue);
+    gap: .5rem;
+}
+.order-details > span {
+    color: black;
+    font-weight: 700;
+}
+
+button.proceed {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bright-blue);
+    border-radius: 1rem;
+    color: white;
+    font-weight: 700;
+    border-style: none;
+    box-shadow: 0 20px 20px 0 rgba(56, 41, 224, 0.2);
+}
+.cancel {
+    border-style: none;
+    background-color: transparent;
+    font-weight: 700;  
+    color: var(--desaturated-blue);
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+a:hover{
+    color: var(--hover-blue);
+    text-decoration: none;
+}
+.proceed:hover {
+    background-color: var(--hover-blue);
+}
+.cancel:hover {
+    color: black;
+}
